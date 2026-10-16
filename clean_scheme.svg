@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <marker id="arr-green" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#00d64f"/>
+    </marker>
+    <marker id="arr-blue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#1f6fe5"/>
+    </marker>
+    <marker id="arr-yellow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#ffd12a"/>
+    </marker>
+    <marker id="arr-red" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#ff2a2a"/>
+    </marker>
+    <style>
+      .bg { fill: #4b5f7a; }
+      .node { fill: none; stroke: #f3f6ff; stroke-width: 3; rx: 8; }
+      .txt { fill: #f3f6ff; font-family: "DejaVu Sans", Arial, sans-serif; }
+      .title { font-size: 40px; font-weight: 700; }
+      .legend-title { font-size: 44px; font-style: italic; }
+      .legend-text { font-size: 34px; }
+      .node-text-big { font-size: 48px; font-weight: 600; }
+      .node-text-mid { font-size: 32px; font-weight: 600; }
+      .node-text-small { font-size: 24px; font-weight: 600; }
+      .emp-circle { fill: none; stroke: #f3f6ff; stroke-width: 3; }
+      .emp-label { font-size: 18px; }
+      .line-green { fill: none; stroke: #00d64f; stroke-width: 3; marker-end: url(#arr-green); }
+      .line-blue { fill: none; stroke: #1f6fe5; stroke-width: 3; marker-end: url(#arr-blue); }
+      .line-blue-bi { fill: none; stroke: #1f6fe5; stroke-width: 3; marker-start: url(#arr-blue); marker-end: url(#arr-blue); }
+      .line-yellow { fill: none; stroke: #ffd12a; stroke-width: 3; marker-end: url(#arr-yellow); }
+      .line-red { fill: none; stroke: #ff2a2a; stroke-width: 3; marker-end: url(#arr-red); }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="900"/>
+
+  <!-- 03>;>2>: -->
+  <text class="txt title" x="700" y="55" text-anchor="middle">!E5<0 2708<>459AB28O</text>
+
+  <!-- 535=40 -->
+  <text class="txt legend-title" x="60" y="85">#A;>2=K5 7=0:8:</text>
+  <line x1="60" y1="95" x2="450" y2="95" stroke="#f3f6ff" stroke-width="2"/>
+
+  <line class="line-green" x1="50" y1="150" x2="110" y2="150"/>
+  <text class="txt legend-text" x="120" y="160">$>@<8@>20=85 ?;0=0</text>
+
+  <line class="line-blue" x1="50" y1="210" x2="110" y2="210"/>
+  <text class="txt legend-text" x="120" y="220">#B>G=5=85, >1AC645=85</text>
+
+  <line class="line-yellow" x1="50" y1="270" x2="110" y2="270"/>
+  <text class="txt legend-text" x="120" y="280">!>3;0A>20=85</text>
+
+  <line class="line-red" x1="50" y1="330" x2="110" y2="330"/>
+  <text class="txt legend-text" x="120" y="340">#B25@645=85</text>
+
+  <circle class="emp-circle" cx="75" cy="400" r="18"/>
+  <text class="txt legend-text" x="120" y="410">!>B@C4=8:8 !</text>
+
+  <!-- #7;K C?@02;5=8O -->
+  <rect class="node" x="1020" y="40" width="250" height="70"/>
+  <text class="txt node-text-mid" x="1145" y="86" text-anchor="middle">8=8AB5@AB2></text>
+
+  <rect class="node" x="560" y="100" width="280" height="90"/>
+  <text class="txt node-text-big" x="700" y="157" text-anchor="middle"> 5:B>@</text>
+
+  <rect class="node" x="410" y="220" width="170" height="60"/>
+  <text class="txt node-text-small" x="495" y="258" text-anchor="middle">@>@5:B>@ 1</text>
+
+  <rect class="node" x="610" y="220" width="170" height="60"/>
+  <text class="txt node-text-small" x="695" y="258" text-anchor="middle">@>@5:B>@ 2</text>
+
+  <rect class="node" x="810" y="220" width="170" height="60"/>
+  <text class="txt node-text-small" x="895" y="258" text-anchor="middle">@>@5:B>@ 3</text>
+
+  <rect class="node" x="560" y="340" width="320" height="90"/>
+  <text class="txt node-text-big" x="720" y="398" text-anchor="middle">02. :0D54@>9</text>
+
+  <!-- !>B@C4=8:8 -->
+  <circle class="emp-circle" cx="190" cy="560" r="28"/><text class="txt emp-label" x="190" y="602" text-anchor="middle">!>B@. 1</text>
+  <circle class="emp-circle" cx="320" cy="560" r="28"/><text class="txt emp-label" x="320" y="602" text-anchor="middle">!>B@. 2</text>
+  <circle class="emp-circle" cx="440" cy="610" r="28"/><text class="txt emp-label" x="440" y="652" text-anchor="middle">!>B@. 3</text>
+  <circle class="emp-circle" cx="220" cy="730" r="28"/><text class="txt emp-label" x="220" y="772" text-anchor="middle">!>B@. 4</text>
+  <circle class="emp-circle" cx="430" cy="760" r="28"/><text class="txt emp-label" x="430" y="802" text-anchor="middle">!>B@. 5</text>
+  <circle class="emp-circle" cx="700" cy="550" r="28"/><text class="txt emp-label" x="700" y="592" text-anchor="middle">!>B@. 6</text>
+  <circle class="emp-circle" cx="700" cy="630" r="28"/><text class="txt emp-label" x="700" y="672" text-anchor="middle">!>B@. 7</text>
+  <circle class="emp-circle" cx="700" cy="700" r="28"/><text class="txt emp-label" x="700" y="742" text-anchor="middle">!>B@. 8</text>
+  <circle class="emp-circle" cx="950" cy="520" r="28"/><text class="txt emp-label" x="950" y="562" text-anchor="middle">!>B@. 9</text>
+  <circle class="emp-circle" cx="1090" cy="530" r="28"/><text class="txt emp-label" x="1090" y="572" text-anchor="middle">!>B@. 10</text>
+  <circle class="emp-circle" cx="970" cy="640" r="28"/><text class="txt emp-label" x="970" y="682" text-anchor="middle">!>B@. 11</text>
+  <circle class="emp-circle" cx="1100" cy="640" r="28"/><text class="txt emp-label" x="1100" y="682" text-anchor="middle">!>B@. 12</text>
+
+  <!-- 5@E=89 C@>25=L -->
+  <path class="line-blue-bi" d="M840,145 C920,120 980,105 1020,92"/>
+  <path class="line-yellow" d="M840,125 C930,95 980,80 1020,75"/>
+
+  <!--  5:B>@ <-> ?@>@5:B>@K -->
+  <path class="line-blue-bi" d="M610,188 C560,205 535,213 495,220"/>
+  <path class="line-blue-bi" d="M700,190 C700,205 700,210 695,220"/>
+  <path class="line-blue-bi" d="M790,188 C840,205 865,213 895,220"/>
+
+  <path class="line-red" d="M640,190 C600,210 560,220 515,240"/>
+  <path class="line-red" d="M700,190 C700,212 700,220 700,240"/>
+  <path class="line-red" d="M760,190 C805,210 845,220 875,240"/>
+
+  <path class="line-yellow" d="M495,220 C560,175 610,150 660,135"/>
+  <path class="line-yellow" d="M695,220 C700,188 702,165 705,145"/>
+  <path class="line-yellow" d="M895,220 C840,176 790,150 745,135"/>
+
+  <!-- @>@5:B>@K <-> 702:0D -->
+  <path class="line-blue-bi" d="M505,280 C560,300 600,320 635,340"/>
+  <path class="line-blue-bi" d="M695,280 C700,300 705,315 710,340"/>
+  <path class="line-blue-bi" d="M885,280 C835,300 800,320 770,340"/>
+
+  <path class="line-red" d="M505,280 C560,315 605,330 650,340"/>
+  <path class="line-red" d="M695,280 C700,320 705,330 715,340"/>
+  <path class="line-red" d="M885,280 C835,315 790,330 760,340"/>
+
+  <path class="line-yellow" d="M665,340 C620,315 565,300 505,280"/>
+  <path class="line-yellow" d="M725,340 C715,315 705,300 695,280"/>
+  <path class="line-yellow" d="M775,340 C815,315 850,300 885,280"/>
+
+  <!-- 02:0D -> A>B@C4=8:8: D>@<8@>20=85 ?;0=0 (75;Q=K9) -->
+  <path class="line-green" d="M690,430 C610,470 470,520 210,560"/>
+  <path class="line-green" d="M700,430 C620,480 510,520 340,560"/>
+  <path class="line-green" d="M705,430 C640,500 560,540 460,610"/>
+  <path class="line-green" d="M695,430 C580,500 430,620 240,730"/>
+  <path class="line-green" d="M710,430 C640,520 560,650 450,760"/>
+  <path class="line-green" d="M730,430 C725,470 715,510 710,550"/>
+  <path class="line-green" d="M730,430 C725,505 715,560 710,630"/>
+  <path class="line-green" d="M730,430 C725,540 715,620 710,700"/>
+  <path class="line-green" d="M750,430 C800,470 860,500 930,520"/>
+  <path class="line-green" d="M760,430 C860,470 950,510 1070,530"/>
+  <path class="line-green" d="M755,430 C815,500 880,570 950,640"/>
+  <path class="line-green" d="M765,430 C880,510 970,580 1080,640"/>
+
+  <!-- !>B@C4=8:8 <-> 702:0D: CB>G=5=85/>1AC645=85 (A8=89) -->
+  <path class="line-blue-bi" d="M680,435 C600,470 450,520 210,560"/>
+  <path class="line-blue-bi" d="M688,435 C620,480 510,530 340,560"/>
+  <path class="line-blue-bi" d="M695,435 C640,505 555,550 460,610"/>
+  <path class="line-blue-bi" d="M685,435 C570,510 420,625 240,730"/>
+  <path class="line-blue-bi" d="M700,435 C630,530 555,660 450,760"/>
+  <path class="line-blue-bi" d="M720,435 C715,470 708,510 705,550"/>
+  <path class="line-blue-bi" d="M720,435 C715,510 708,570 705,630"/>
+  <path class="line-blue-bi" d="M720,435 C715,545 708,630 705,700"/>
+  <path class="line-blue-bi" d="M740,435 C790,475 855,505 930,520"/>
+  <path class="line-blue-bi" d="M748,435 C850,475 950,515 1070,530"/>
+  <path class="line-blue-bi" d="M743,435 C805,505 875,575 950,640"/>
+  <path class="line-blue-bi" d="M752,435 C865,515 965,585 1080,640"/>
+
+  <!-- !>B@C4=8:8 -> 702:0D: A>3;0A>20=85 (6Q;BK9) -->
+  <path class="line-yellow" d="M210,560 C470,525 620,475 710,430"/>
+  <path class="line-yellow" d="M340,560 C510,530 620,485 715,430"/>
+  <path class="line-yellow" d="M460,610 C555,550 640,500 720,430"/>
+  <path class="line-yellow" d="M240,730 C430,620 580,515 720,430"/>
+  <path class="line-yellow" d="M450,760 C560,650 640,535 720,430"/>
+  <path class="line-yellow" d="M700,550 C705,510 712,470 725,430"/>
+  <path class="line-yellow" d="M700,630 C705,560 712,510 725,430"/>
+  <path class="line-yellow" d="M700,700 C705,620 712,545 725,430"/>
+  <path class="line-yellow" d="M950,520 C860,500 800,470 730,430"/>
+  <path class="line-yellow" d="M1090,530 C970,510 870,470 735,430"/>
+  <path class="line-yellow" d="M970,640 C885,575 810,510 735,430"/>
+  <path class="line-yellow" d="M1100,640 C980,585 875,515 740,430"/>
+
+  <!-- 02:0D -> A>B@C4=8:8: CB25@645=85 (:@0A=K9) -->
+  <path class="line-red" d="M675,430 C600,470 460,520 210,560"/>
+  <path class="line-red" d="M682,430 C610,480 500,525 340,560"/>
+  <path class="line-red" d="M690,430 C630,500 550,545 460,610"/>
+  <path class="line-red" d="M680,430 C565,505 415,620 240,730"/>
+  <path class="line-red" d="M695,430 C625,525 550,655 450,760"/>
+  <path class="line-red" d="M715,430 C710,470 704,510 700,550"/>
+  <path class="line-red" d="M715,430 C710,505 704,565 700,630"/>
+  <path class="line-red" d="M715,430 C710,540 704,625 700,700"/>
+  <path class="line-red" d="M735,430 C785,470 850,500 930,520"/>
+  <path class="line-red" d="M742,430 C845,470 945,510 1070,530"/>
+  <path class="line-red" d="M738,430 C800,500 870,570 950,640"/>
+  <path class="line-red" d="M747,430 C860,510 960,580 1080,640"/>
+</svg>
