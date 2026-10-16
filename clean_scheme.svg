@@ -1,167 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
   <defs>
-    <marker id="arr-green" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 Z" fill="#00d64f"/>
+    <marker id="arr-green" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L12,5 L0,10 Z" fill="#00d64f"/>
     </marker>
-    <marker id="arr-blue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 Z" fill="#1f6fe5"/>
+    <marker id="arr-blue" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L12,5 L0,10 Z" fill="#1f6fe5"/>
     </marker>
-    <marker id="arr-yellow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 Z" fill="#ffd12a"/>
+    <marker id="arr-yellow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L12,5 L0,10 Z" fill="#ffd12a"/>
     </marker>
-    <marker id="arr-red" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 Z" fill="#ff2a2a"/>
+    <marker id="arr-red" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L12,5 L0,10 Z" fill="#ff2a2a"/>
     </marker>
     <style>
       .bg { fill: #4b5f7a; }
       .node { fill: none; stroke: #f3f6ff; stroke-width: 3; rx: 8; }
       .txt { fill: #f3f6ff; font-family: "DejaVu Sans", Arial, sans-serif; }
-      .title { font-size: 40px; font-weight: 700; }
-      .legend-title { font-size: 44px; font-style: italic; }
-      .legend-text { font-size: 34px; }
-      .node-text-big { font-size: 48px; font-weight: 600; }
-      .node-text-mid { font-size: 32px; font-weight: 600; }
+      .title { font-size: 38px; font-weight: 700; }
+      .legend-title { font-size: 42px; font-style: italic; }
+      .legend-text { font-size: 30px; }
+      .hint-text { font-size: 24px; opacity: 0.95; }
+      .node-text-big { font-size: 46px; font-weight: 600; }
+      .node-text-mid { font-size: 31px; font-weight: 600; }
       .node-text-small { font-size: 24px; font-weight: 600; }
       .emp-circle { fill: none; stroke: #f3f6ff; stroke-width: 3; }
-      .emp-label { font-size: 18px; }
-      .line-green { fill: none; stroke: #00d64f; stroke-width: 3; marker-end: url(#arr-green); }
-      .line-blue { fill: none; stroke: #1f6fe5; stroke-width: 3; marker-end: url(#arr-blue); }
-      .line-blue-bi { fill: none; stroke: #1f6fe5; stroke-width: 3; marker-start: url(#arr-blue); marker-end: url(#arr-blue); }
-      .line-yellow { fill: none; stroke: #ffd12a; stroke-width: 3; marker-end: url(#arr-yellow); }
-      .line-red { fill: none; stroke: #ff2a2a; stroke-width: 3; marker-end: url(#arr-red); }
+      .emp-label { font-size: 19px; }
+      .flow { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; opacity: 0.96; }
+      .line-green { stroke: #00d64f; marker-end: url(#arr-green); }
+      .line-blue { stroke: #1f6fe5; marker-start: url(#arr-blue); marker-end: url(#arr-blue); }
+      .line-yellow { stroke: #ffd12a; marker-end: url(#arr-yellow); }
+      .line-red { stroke: #ff2a2a; marker-end: url(#arr-red); }
+      .helper { fill: none; stroke: #f3f6ff; stroke-opacity: 0.10; stroke-width: 1.6; stroke-dasharray: 5 7; }
     </style>
   </defs>
-
-  <rect class="bg" x="0" y="0" width="1400" height="900"/>
-
-  <text class="txt title" x="700" y="55" text-anchor="middle">Схема взаимодействия</text>
-
-  <text class="txt legend-title" x="60" y="85">Условные знаки:</text>
-  <line x1="60" y1="95" x2="450" y2="95" stroke="#f3f6ff" stroke-width="2"/>
-
-  <line class="line-green" x1="50" y1="150" x2="110" y2="150"/>
-  <text class="txt legend-text" x="120" y="160">Формирование плана</text>
-
-  <line class="line-blue" x1="50" y1="210" x2="110" y2="210"/>
-  <text class="txt legend-text" x="120" y="220">Уточнение, обсуждение</text>
-
-  <line class="line-yellow" x1="50" y1="270" x2="110" y2="270"/>
-  <text class="txt legend-text" x="120" y="280">Согласование</text>
-
-  <line class="line-red" x1="50" y1="330" x2="110" y2="330"/>
-  <text class="txt legend-text" x="120" y="340">Утверждение</text>
-
-  <circle class="emp-circle" cx="75" cy="400" r="18"/>
-  <text class="txt legend-text" x="120" y="410">Сотрудники СП</text>
-
-  <rect class="node" x="1020" y="40" width="250" height="70"/>
-  <text class="txt node-text-mid" x="1145" y="86" text-anchor="middle">Министерство</text>
-
-  <rect class="node" x="560" y="100" width="280" height="90"/>
-  <text class="txt node-text-big" x="700" y="157" text-anchor="middle">Ректор</text>
-
-  <rect class="node" x="410" y="220" width="170" height="60"/>
-  <text class="txt node-text-small" x="495" y="258" text-anchor="middle">Проректор 1</text>
-
-  <rect class="node" x="610" y="220" width="170" height="60"/>
-  <text class="txt node-text-small" x="695" y="258" text-anchor="middle">Проректор 2</text>
-
-  <rect class="node" x="810" y="220" width="170" height="60"/>
-  <text class="txt node-text-small" x="895" y="258" text-anchor="middle">Проректор 3</text>
-
-  <rect class="node" x="560" y="340" width="320" height="90"/>
-  <text class="txt node-text-big" x="720" y="398" text-anchor="middle">Зав. кафедрой</text>
-
-  <circle class="emp-circle" cx="190" cy="560" r="28"/><text class="txt emp-label" x="190" y="602" text-anchor="middle">Сотр. 1</text>
-  <circle class="emp-circle" cx="320" cy="560" r="28"/><text class="txt emp-label" x="320" y="602" text-anchor="middle">Сотр. 2</text>
-  <circle class="emp-circle" cx="440" cy="610" r="28"/><text class="txt emp-label" x="440" y="652" text-anchor="middle">Сотр. 3</text>
-  <circle class="emp-circle" cx="220" cy="730" r="28"/><text class="txt emp-label" x="220" y="772" text-anchor="middle">Сотр. 4</text>
-  <circle class="emp-circle" cx="430" cy="760" r="28"/><text class="txt emp-label" x="430" y="802" text-anchor="middle">Сотр. 5</text>
-  <circle class="emp-circle" cx="700" cy="550" r="28"/><text class="txt emp-label" x="700" y="592" text-anchor="middle">Сотр. 6</text>
-  <circle class="emp-circle" cx="700" cy="630" r="28"/><text class="txt emp-label" x="700" y="672" text-anchor="middle">Сотр. 7</text>
-  <circle class="emp-circle" cx="700" cy="700" r="28"/><text class="txt emp-label" x="700" y="742" text-anchor="middle">Сотр. 8</text>
-  <circle class="emp-circle" cx="950" cy="520" r="28"/><text class="txt emp-label" x="950" y="562" text-anchor="middle">Сотр. 9</text>
-  <circle class="emp-circle" cx="1090" cy="530" r="28"/><text class="txt emp-label" x="1090" y="572" text-anchor="middle">Сотр. 10</text>
-  <circle class="emp-circle" cx="970" cy="640" r="28"/><text class="txt emp-label" x="970" y="682" text-anchor="middle">Сотр. 11</text>
-  <circle class="emp-circle" cx="1100" cy="640" r="28"/><text class="txt emp-label" x="1100" y="682" text-anchor="middle">Сотр. 12</text>
-
-  <path class="line-blue-bi" d="M840,145 C920,120 980,105 1020,92"/>
-  <path class="line-yellow" d="M840,125 C930,95 980,80 1020,75"/>
-
-  <path class="line-blue-bi" d="M610,188 C560,205 535,213 495,220"/>
-  <path class="line-blue-bi" d="M700,190 C700,205 700,210 695,220"/>
-  <path class="line-blue-bi" d="M790,188 C840,205 865,213 895,220"/>
-
-  <path class="line-red" d="M640,190 C600,210 560,220 515,240"/>
-  <path class="line-red" d="M700,190 C700,212 700,220 700,240"/>
-  <path class="line-red" d="M760,190 C805,210 845,220 875,240"/>
-
-  <path class="line-yellow" d="M495,220 C560,175 610,150 660,135"/>
-  <path class="line-yellow" d="M695,220 C700,188 702,165 705,145"/>
-  <path class="line-yellow" d="M895,220 C840,176 790,150 745,135"/>
-
-  <path class="line-blue-bi" d="M505,280 C560,300 600,320 635,340"/>
-  <path class="line-blue-bi" d="M695,280 C700,300 705,315 710,340"/>
-  <path class="line-blue-bi" d="M885,280 C835,300 800,320 770,340"/>
-
-  <path class="line-red" d="M505,280 C560,315 605,330 650,340"/>
-  <path class="line-red" d="M695,280 C700,320 705,330 715,340"/>
-  <path class="line-red" d="M885,280 C835,315 790,330 760,340"/>
-
-  <path class="line-yellow" d="M665,340 C620,315 565,300 505,280"/>
-  <path class="line-yellow" d="M725,340 C715,315 705,300 695,280"/>
-  <path class="line-yellow" d="M775,340 C815,315 850,300 885,280"/>
-
-  <path class="line-green" d="M690,430 C610,470 470,520 210,560"/>
-  <path class="line-green" d="M700,430 C620,480 510,520 340,560"/>
-  <path class="line-green" d="M705,430 C640,500 560,540 460,610"/>
-  <path class="line-green" d="M695,430 C580,500 430,620 240,730"/>
-  <path class="line-green" d="M710,430 C640,520 560,650 450,760"/>
-  <path class="line-green" d="M730,430 C725,470 715,510 710,550"/>
-  <path class="line-green" d="M730,430 C725,505 715,560 710,630"/>
-  <path class="line-green" d="M730,430 C725,540 715,620 710,700"/>
-  <path class="line-green" d="M750,430 C800,470 860,500 930,520"/>
-  <path class="line-green" d="M760,430 C860,470 950,510 1070,530"/>
-  <path class="line-green" d="M755,430 C815,500 880,570 950,640"/>
-  <path class="line-green" d="M765,430 C880,510 970,580 1080,640"/>
-
-  <path class="line-blue-bi" d="M680,435 C600,470 450,520 210,560"/>
-  <path class="line-blue-bi" d="M688,435 C620,480 510,530 340,560"/>
-  <path class="line-blue-bi" d="M695,435 C640,505 555,550 460,610"/>
-  <path class="line-blue-bi" d="M685,435 C570,510 420,625 240,730"/>
-  <path class="line-blue-bi" d="M700,435 C630,530 555,660 450,760"/>
-  <path class="line-blue-bi" d="M720,435 C715,470 708,510 705,550"/>
-  <path class="line-blue-bi" d="M720,435 C715,510 708,570 705,630"/>
-  <path class="line-blue-bi" d="M720,435 C715,545 708,630 705,700"/>
-  <path class="line-blue-bi" d="M740,435 C790,475 855,505 930,520"/>
-  <path class="line-blue-bi" d="M748,435 C850,475 950,515 1070,530"/>
-  <path class="line-blue-bi" d="M743,435 C805,505 875,575 950,640"/>
-  <path class="line-blue-bi" d="M752,435 C865,515 965,585 1080,640"/>
-
-  <path class="line-yellow" d="M210,560 C470,525 620,475 710,430"/>
-  <path class="line-yellow" d="M340,560 C510,530 620,485 715,430"/>
-  <path class="line-yellow" d="M460,610 C555,550 640,500 720,430"/>
-  <path class="line-yellow" d="M240,730 C430,620 580,515 720,430"/>
-  <path class="line-yellow" d="M450,760 C560,650 640,535 720,430"/>
-  <path class="line-yellow" d="M700,550 C705,510 712,470 725,430"/>
-  <path class="line-yellow" d="M700,630 C705,560 712,510 725,430"/>
-  <path class="line-yellow" d="M700,700 C705,620 712,545 725,430"/>
-  <path class="line-yellow" d="M950,520 C860,500 800,470 730,430"/>
-  <path class="line-yellow" d="M1090,530 C970,510 870,470 735,430"/>
-  <path class="line-yellow" d="M970,640 C885,575 810,510 735,430"/>
-  <path class="line-yellow" d="M1100,640 C980,585 875,515 740,430"/>
-
-  <path class="line-red" d="M675,430 C600,470 460,520 210,560"/>
-  <path class="line-red" d="M682,430 C610,480 500,525 340,560"/>
-  <path class="line-red" d="M690,430 C630,500 550,545 460,610"/>
-  <path class="line-red" d="M680,430 C565,505 415,620 240,730"/>
-  <path class="line-red" d="M695,430 C625,525 550,655 450,760"/>
-  <path class="line-red" d="M715,430 C710,470 704,510 700,550"/>
-  <path class="line-red" d="M715,430 C710,505 704,565 700,630"/>
-  <path class="line-red" d="M715,430 C710,540 704,625 700,700"/>
-  <path class="line-red" d="M735,430 C785,470 850,500 930,520"/>
-  <path class="line-red" d="M742,430 C845,470 945,510 1070,530"/>
-  <path class="line-red" d="M738,430 C800,500 870,570 950,640"/>
-  <path class="line-red" d="M747,430 C860,510 960,580 1080,640"/>
+  <rect class="bg" x="0" y="0" width="1600" height="980"/>
+  <text class="txt title" x="860" y="58" text-anchor="middle">Схема взаимодействия</text>
+  <text class="txt legend-title" x="50" y="82">Условные знаки:</text>
+  <line x1="50" y1="92" x2="460" y2="92" stroke="#f3f6ff" stroke-width="2"/>
+  <line class="flow line-green" x1="44" y1="145" x2="108" y2="145"/>
+  <text class="txt legend-text" x="122" y="156">Формирование плана (вниз)</text>
+  <line class="flow line-blue" x1="44" y1="202" x2="108" y2="202"/>
+  <text class="txt legend-text" x="122" y="213">Уточнение и обсуждение (двусторонне)</text>
+  <line class="flow line-yellow" x1="44" y1="259" x2="108" y2="259"/>
+  <text class="txt legend-text" x="122" y="270">Согласование (вверх)</text>
+  <line class="flow line-red" x1="44" y1="316" x2="108" y2="316"/>
+  <text class="txt legend-text" x="122" y="327">Утверждение (вниз)</text>
+  <circle class="emp-circle" cx="76" cy="380" r="18"/>
+  <text class="txt legend-text" x="122" y="390">Сотрудники СП</text>
+  <text class="txt hint-text" x="50" y="442">Стрелки разведены по цветовым каналам,</text>
+  <text class="txt hint-text" x="50" y="472">чтобы связи читались без наложений.</text>
+  <rect class="node" x="1105.0" y="54.0" width="270.0" height="72.0"/>
+  <text class="txt node-text-mid" x="1240.0" y="100.0" text-anchor="middle">Министерство</text>
+  <rect class="node" x="640.0" y="102.0" width="280.0" height="96.0"/>
+  <text class="txt node-text-big" x="780.0" y="160.0" text-anchor="middle">Ректор</text>
+  <rect class="node" x="445.0" y="258.0" width="190.0" height="68.0"/>
+  <text class="txt node-text-small" x="540.0" y="302.0" text-anchor="middle">Проректор 1</text>
+  <rect class="node" x="685.0" y="258.0" width="190.0" height="68.0"/>
+  <text class="txt node-text-small" x="780.0" y="302.0" text-anchor="middle">Проректор 2</text>
+  <rect class="node" x="925.0" y="258.0" width="190.0" height="68.0"/>
+  <text class="txt node-text-small" x="1020.0" y="302.0" text-anchor="middle">Проректор 3</text>
+  <rect class="node" x="600.0" y="382.0" width="360.0" height="96.0"/>
+  <text class="txt node-text-big" x="780.0" y="440.0" text-anchor="middle">Зав. кафедрой</text>
+  <circle class="emp-circle" cx="260" cy="660" r="28"/>
+  <text class="txt emp-label" x="260" y="704" text-anchor="middle">Сотр. 1</text>
+  <circle class="emp-circle" cx="430" cy="660" r="28"/>
+  <text class="txt emp-label" x="430" y="704" text-anchor="middle">Сотр. 2</text>
+  <circle class="emp-circle" cx="600" cy="660" r="28"/>
+  <text class="txt emp-label" x="600" y="704" text-anchor="middle">Сотр. 3</text>
+  <circle class="emp-circle" cx="960" cy="660" r="28"/>
+  <text class="txt emp-label" x="960" y="704" text-anchor="middle">Сотр. 4</text>
+  <circle class="emp-circle" cx="1130" cy="660" r="28"/>
+  <text class="txt emp-label" x="1130" y="704" text-anchor="middle">Сотр. 5</text>
+  <circle class="emp-circle" cx="1300" cy="660" r="28"/>
+  <text class="txt emp-label" x="1300" y="704" text-anchor="middle">Сотр. 6</text>
+  <circle class="emp-circle" cx="260" cy="810" r="28"/>
+  <text class="txt emp-label" x="260" y="854" text-anchor="middle">Сотр. 7</text>
+  <circle class="emp-circle" cx="430" cy="810" r="28"/>
+  <text class="txt emp-label" x="430" y="854" text-anchor="middle">Сотр. 8</text>
+  <circle class="emp-circle" cx="600" cy="810" r="28"/>
+  <text class="txt emp-label" x="600" y="854" text-anchor="middle">Сотр. 9</text>
+  <circle class="emp-circle" cx="960" cy="810" r="28"/>
+  <text class="txt emp-label" x="960" y="854" text-anchor="middle">Сотр. 10</text>
+  <circle class="emp-circle" cx="1130" cy="810" r="28"/>
+  <text class="txt emp-label" x="1130" y="854" text-anchor="middle">Сотр. 11</text>
+  <circle class="emp-circle" cx="1300" cy="810" r="28"/>
+  <text class="txt emp-label" x="1300" y="854" text-anchor="middle">Сотр. 12</text>
+  <path class="helper" d="M780,484.0 L260,630"/>
+  <path class="helper" d="M780,484.0 L430,630"/>
+  <path class="helper" d="M780,484.0 L600,630"/>
+  <path class="helper" d="M780,484.0 L960,630"/>
+  <path class="helper" d="M780,484.0 L1130,630"/>
+  <path class="helper" d="M780,484.0 L1300,630"/>
+  <path class="helper" d="M780,484.0 L260,780"/>
+  <path class="helper" d="M780,484.0 L430,780"/>
+  <path class="helper" d="M780,484.0 L600,780"/>
+  <path class="helper" d="M780,484.0 L960,780"/>
+  <path class="helper" d="M780,484.0 L1130,780"/>
+  <path class="helper" d="M780,484.0 L1300,780"/>
+  <path class="flow line-blue" d="M910.0,140.0 C965.5,120.0 1039.5,112.0 1095.0,92.0"/>
+  <path class="flow line-yellow" d="M900.0,122.0 C941.8,84.0 1048.2,110.0 1090.0,72.0"/>
+  <path class="flow line-blue" d="M767.4,198.0 C653.7,218.0 653.7,236.0 540.0,256.0"/>
+  <path class="flow line-red" d="M773.0,192.0 C658.5,222.0 648.9,236.0 534.4,266.0"/>
+  <path class="flow line-yellow" d="M543.5,272.0 C664.3,258.0 655.0,182.0 775.8,168.0"/>
+  <path class="flow line-blue" d="M780.0,198.0 C780.0,218.0 780.0,236.0 780.0,256.0"/>
+  <path class="flow line-red" d="M780.0,192.0 C780.0,222.0 780.0,236.0 780.0,266.0"/>
+  <path class="flow line-yellow" d="M780.0,272.0 C780.0,258.0 780.0,182.0 780.0,168.0"/>
+  <path class="flow line-blue" d="M792.6,198.0 C906.3,218.0 906.3,236.0 1020.0,256.0"/>
+  <path class="flow line-red" d="M787.0,192.0 C901.5,222.0 911.1,236.0 1025.6,266.0"/>
+  <path class="flow line-yellow" d="M1016.5,272.0 C895.7,258.0 905.0,182.0 784.2,168.0"/>
+  <path class="flow line-blue" d="M535.5,328.0 C634.2,346.0 656.1,366.0 754.8,384.0"/>
+  <path class="flow line-red" d="M537.3,324.0 C627.2,349.0 672.1,363.0 762.0,388.0"/>
+  <path class="flow line-yellow" d="M762.0,396.0 C648.3,386.0 648.3,324.0 534.6,314.0"/>
+  <path class="flow line-blue" d="M780.0,328.0 C780.0,346.0 780.0,366.0 780.0,384.0"/>
+  <path class="flow line-red" d="M780.0,324.0 C780.0,349.0 780.0,363.0 780.0,388.0"/>
+  <path class="flow line-yellow" d="M780.0,396.0 C780.0,386.0 780.0,324.0 780.0,314.0"/>
+  <path class="flow line-blue" d="M1024.5,328.0 C925.8,346.0 903.9,366.0 805.2,384.0"/>
+  <path class="flow line-red" d="M1022.7,324.0 C932.8,349.0 887.9,363.0 798.0,388.0"/>
+  <path class="flow line-yellow" d="M798.0,396.0 C911.7,386.0 911.7,324.0 1025.4,314.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C555.4,533.0 422.6,577.0 252.0,632.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C561.2,543.0 460.8,565.0 260.0,628.0"/>
+  <path class="flow line-yellow" d="M270.0,630.0 C634.3,569.0 433.7,543.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C647.2,553.0 454.8,565.0 268.0,634.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C616.6,529.0 531.4,581.0 422.0,632.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C629.2,539.0 562.8,569.0 430.0,628.0"/>
+  <path class="flow line-yellow" d="M440.0,630.0 C687.0,573.0 551.0,539.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C703.3,549.0 568.7,569.0 438.0,634.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C677.8,525.0 640.2,585.0 592.0,632.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C697.2,535.0 664.8,573.0 600.0,628.0"/>
+  <path class="flow line-yellow" d="M610.0,630.0 C739.7,577.0 668.3,535.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C759.4,545.0 682.6,573.0 608.0,634.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C807.4,525.0 870.6,585.0 952.0,632.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C841.2,535.0 880.8,573.0 960.0,628.0"/>
+  <path class="flow line-yellow" d="M970.0,630.0 C851.3,577.0 916.7,535.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C878.2,545.0 923.8,573.0 968.0,634.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C868.6,529.0 979.4,581.0 1122.0,632.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C909.2,539.0 982.8,569.0 1130.0,628.0"/>
+  <path class="flow line-yellow" d="M1140.0,630.0 C904.0,573.0 1034.0,539.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C934.3,549.0 1037.7,569.0 1138.0,634.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C929.8,533.0 1088.2,577.0 1292.0,632.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C977.2,543.0 1084.8,565.0 1300.0,628.0"/>
+  <path class="flow line-yellow" d="M1310.0,630.0 C956.7,569.0 1151.3,543.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C990.4,553.0 1151.6,565.0 1308.0,634.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C583.8,533.0 394.2,727.0 252.0,782.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C591.3,543.0 430.7,715.0 260.0,778.0"/>
+  <path class="flow line-yellow" d="M270.0,780.0 C666.0,719.0 402.0,543.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C681.2,553.0 420.8,715.0 268.0,784.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C634.8,529.0 513.2,731.0 422.0,782.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C649.1,539.0 542.9,719.0 430.0,778.0"/>
+  <path class="flow line-yellow" d="M440.0,780.0 C708.5,723.0 529.5,539.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C727.1,549.0 544.9,719.0 438.0,784.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C685.8,525.0 632.2,735.0 592.0,782.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C706.9,535.0 655.1,723.0 600.0,778.0"/>
+  <path class="flow line-yellow" d="M610.0,780.0 C751.0,727.0 657.0,535.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C773.0,545.0 669.0,723.0 608.0,784.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C793.8,525.0 884.2,735.0 952.0,782.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C829.3,535.0 892.7,723.0 960.0,778.0"/>
+  <path class="flow line-yellow" d="M970.0,780.0 C841.0,727.0 927.0,535.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C870.2,545.0 931.8,723.0 968.0,784.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C844.8,529.0 1003.2,731.0 1122.0,782.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C887.1,539.0 1004.9,719.0 1130.0,778.0"/>
+  <path class="flow line-yellow" d="M1140.0,780.0 C883.5,723.0 1054.5,539.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C916.1,549.0 1055.9,719.0 1138.0,784.0"/>
+  <path class="flow line-green" d="M726.0,478.0 C895.8,533.0 1122.2,727.0 1292.0,782.0"/>
+  <path class="flow line-blue" d="M762.0,480.0 C944.9,543.0 1117.1,715.0 1300.0,778.0"/>
+  <path class="flow line-yellow" d="M1310.0,780.0 C926.0,719.0 1182.0,543.0 798.0,482.0"/>
+  <path class="flow line-red" d="M834.0,484.0 C962.0,553.0 1180.0,715.0 1308.0,784.0"/>
 </svg>
